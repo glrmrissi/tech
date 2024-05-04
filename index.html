@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TechForAll</title>
+    <link rel="shortcut icon" href="assets/imgs/icons/display.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/import.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,10 +19,19 @@
         <header class="header-container">
             <nav class="navbar">
                 <div class="menuHamburguer">
-                    <img class="menuHamburguer" height="31px"
+                    <img id="Open" class="menuHamburguer" height="31px"
                         src="assets/imgs/icons/burger-menu-left-svgrepo-com (2).svg" alt="">
+                        <div class="showOpen">
+                            <ul>
+                                <div class="close"><p id="closeButton">X</p></div>
+                                <li class="nav-link"><a href="">Home</a></li>
+                                <li class="nav-link"><a href="">Quem somos?</a></li>
+                                <li class="nav-link"><a href="">Como funciona?</a></li>
+                                <li class="nav-link"><a href="">Contato</a></li>
+                            </ul>
+                        </div>
                 </div>
-                <ul>
+                <ul class="listOpen">
                     <li class="nav-link"><a href="">Home</a></li>
                     <li class="nav-link"><a href="">Quem somos?</a></li>
                     <li class="nav-link"><a href="">Como funciona?</a></li>
@@ -29,7 +39,7 @@
                 </ul>
                 <div class="search">
                     <div>
-                        <img width="100%" src="assets/imgs/img/anime-heart.gif" alt="">
+                        <img width="100%" src="assets/imgs/img/Captura de tela 2024-05-02 000103.png" alt="">
                     </div>
                 </div>
             </nav>
@@ -38,8 +48,11 @@
             <article class="cards">
                 <div class="card">
                     <div class="circle-card">
+                        <div class="overlay">
+                            <h1><3</h1>
+                        </div>
                         <div class="img-card">
-                            <img src="assets/imgs/img/pexels-moayach-439803.jpg" alt="">
+                            <img src="assets/imgs/img/pexels-cottonbro-5483077.jpg" alt="">
                         </div>
                         <div class="text_card">
                             <p>Conheça nossa instituição</p>
@@ -49,17 +62,17 @@
                 <div class="card">
                     <div class="circle-card">
                         <div class="img-card">
-                            <img src="assets/imgs/img/pexels-moayach-439803.jpg" alt="">
+                            <img src="assets/imgs/img/pexels-karymefranca-1535907.jpg" alt="">
                         </div>
                         <div class="text_card">
-                            <p>Faça parte da nossa instituição</p>
+                            <p>Torne seu sonho em realidade</p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="circle-card">
                         <div class="img-card">
-                            <img src="assets/imgs/img/pexels-moayach-439803.jpg" alt="">
+                            <img src="assets/imgs/img/pexels-rostislav-5011647.jpg" alt="">
                         </div>
                         <div class="text_card">
                             <p>Aprenda habilidades novas</p>
@@ -69,8 +82,15 @@
             </article>
         </section>
         <section class="section-como-funciona">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.4/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/gEOO2kWz31-Tgrws/scene.splinecode"></spline-viewer>
+            <article class="img-funciona">
+                <img src="assets/imgs/img/Full-Moon-Video-GIF-unscreen.gif" alt="">
+            </article>
+            <aside class="text-funciona">
+                <h1 style="color: #ff0000;">Como funciona?</h1>
+                <div style="color: #fff;">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam sit provident, deleniti voluptates porro repellendus totam explicabo cupiditate accusantium esse quod voluptatem aliquid labore dolorem maiores unde optio. Temporibus, id?</p>
+                </div>
+            </aside>
         </section>
     </main>
     <script src="assets/js/script.js"></script>
