@@ -125,4 +125,14 @@
         flex-wrap: wrap;
     }
 
+    .img-funciona {
+        margin-top: 20vh;
+        height: auto;
+    }
+    .text-funciona p{
+        height: auto;
+        color:var(--text-white);
+        padding-left: 2vh;
+    }
+
 } 

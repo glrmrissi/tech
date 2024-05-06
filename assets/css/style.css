@@ -1,4 +1,5 @@
 @import url(../css/medias/medias.css);
+
 :root {
      --bg-dark: #2a2a2a;
      --bg-black: #000;
@@ -166,44 +167,3 @@ body {
     flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-    .navbar ul{
-        display: none;
-    }
-
-    .menuHamburguer {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .menuHamburguer img {
-        cursor: pointer;
-        width: auto;
-        transition: all 0.3s;
-    }
-
-    .menuHamburguer img:hover {
-        scale: 1.1;
-        border-radius: 100%;
-        background-color: var(--bg-dark);
-    }
-
-    /* HEADER END*/
-
-    .vantages {
-        display: flex;
-        min-height: 100%;
-        width: 100%;
-        height: auto;
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-    /* SECTION 1 END */
-} 
