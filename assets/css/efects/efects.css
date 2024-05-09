@@ -1,8 +1,7 @@
-
 .h-effect {
         position: relative;
         font-size: 1.1em;
-        color: #fff;
+        color: var(--text-white);
         text-decoration: none;
         font-weight: 500;
         margin-left: 40px;
@@ -15,8 +14,8 @@
         left: 0;
         bottom: -1px;
         width: 100%;
-        height: 3px;
-        background: #fff;
+        height: 2px;
+        background: var(--text-white);
         border-radius: 5px;
         transform-origin: right;
         transform: scaleX(0);
@@ -26,4 +25,67 @@
 .h-effect:hover:after {
         transform-origin: left;
         transform: scaleX(1);
+}
+
+.h1-effect {
+    position: relative;
+    font-size: 1.1em;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.h1-effect:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.h1-effect::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    border-radius: 16px 5px 16px 5px;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+
+.h1-effect:hover:after {
+    transform-origin: top;
+    color: #fff;
+    transform: scaleY(1);
+}
+
+.bg-effect {
+    position: relative;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.bg-effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5620448863139005) 0%, rgba(235,235,235,1) 50%, rgba(255,255,255,0.5648460067620799) 100%); 
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.3s;
+}
+
+.bg-effect:hover:after {
+    transform-origin: bottom;
+    transform: scaleY(1);
 }
