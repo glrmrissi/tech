@@ -9,6 +9,10 @@
     --pastel-dark: #333333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
