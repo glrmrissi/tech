@@ -268,7 +268,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 50vh;
+    width: 100%;
     color: #fff;
     background-color: #000000;
 
@@ -276,4 +278,18 @@ body {
 
 .footer-container p {
     padding: 20px;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.paragrafes-footer {
+    display: flex;
 }
