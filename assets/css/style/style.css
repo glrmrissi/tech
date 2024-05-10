@@ -110,7 +110,10 @@ body {
 
 .title-vantages {
     color: #fff;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cards {
