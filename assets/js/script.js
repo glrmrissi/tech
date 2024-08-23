@@ -1,8 +1,6 @@
 const openNavMobal = document.getElementById('Open')
 const headerMobal =  document.querySelector('.showOpen');
 const closeBtn = document.getElementById('closeButton');
-let width = document.body.offsetWidth
-console.log(width)
 
 openNavMobal.addEventListener('click', function () {
     headerMobal.classList.add('active');

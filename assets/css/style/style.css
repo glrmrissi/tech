@@ -210,6 +210,7 @@ body {
 .circle-card:hover .overlay {
     transform-origin: right transition 0.3s ease-in-out;
     opacity: 1;
+    overflow: hidden;
 }
 
 .circle-card:hover::after .overlay{
@@ -264,6 +265,12 @@ body {
     height: 40vh;
     width: 40vh;
     border-radius: 100%;
+    transition: ease-in-out .3s;
+    overflow: hidden;
+}
+
+.circle-img:hover {
+    rotate: 65deg;
     overflow: hidden;
 }
 
